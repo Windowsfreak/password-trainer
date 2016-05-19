@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kennwörter üben</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Lerne dein Kennwort auswendig!</h1>
+        </div>
+        <p class="lead"><label for="pwd">Kennwort eingeben:</label></p>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Kennwort</span>
+            <input type="password" class="form-control" id="pwd" aria-label="Pwd">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Prüfen!</button>
+            </span>
+        </div>
+        <p></p>
+        <div class="list-group">
+            <a href="#" class="list-group-item l l1 list-group-item-success"><strong>Richtig!</strong> Du hast es drauf!</a>
+            <a href="#" class="list-group-item l l2 list-group-item-info"><strong>Fast Richtig!</strong> <span class="score"></span> Zeichen falsch</a>
+            <a href="#" class="list-group-item l l3 list-group-item-warning"><strong>Ein paar Fehler!</strong> <span class="score"></span> Zeichen falsch</a>
+            <a href="#" class="list-group-item l l4 list-group-item-danger"><strong>Falsch!</strong> <span class="score"></span> Zeichen falsch!</a>
+            <a href="#" class="list-group-item btn-reveal"><strong>Auflösung zeigen (Enter drücken)</strong></a>
+            <a href="#" class="list-group-item reveal">
+                <p class="list-group-item-text"><code class="text-danger"></code></p>
+                <p class="list-group-item-text"><code class="text-success">123456</code></p>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><button class="btn btn-default" type="button">Als neues Kennwort festlegen</button></p>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pwd.js"></script>
+</body>
+</html>

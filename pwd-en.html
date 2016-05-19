@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train your Password</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Train your Password!</h1>
+        </div>
+        <p class="lead"><label for="pwd">Enter password:</label></p>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Password</span>
+            <input type="password" class="form-control" id="pwd" aria-label="Pwd">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Check!</button>
+            </span>
+        </div>
+        <p></p>
+        <div class="list-group">
+            <a href="#" class="list-group-item l l1 list-group-item-success"><strong>Correct!</strong> You got it right!</a>
+            <a href="#" class="list-group-item l l2 list-group-item-info"><strong>Almost correct!</strong> You've got just <span class="score"></span> character<span class="pl">s</span> wrong.</a>
+            <a href="#" class="list-group-item l l3 list-group-item-warning"><strong>You've made some errors!</strong> <span class="score"></span> character<span class="pl">s</span> are wrong.</a>
+            <a href="#" class="list-group-item l l4 list-group-item-danger"><strong>Wrong password!</strong> <span class="score"></span> character<span class="pl">s</span> are wrong.</a>
+            <a href="#" class="list-group-item btn-reveal"><strong>Reveal (press Enter)</strong></a>
+            <a href="#" class="list-group-item reveal">
+                <p class="list-group-item-text"><code class="text-danger"></code></p>
+                <p class="list-group-item-text"><code class="text-success">123456</code></p>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><button class="btn btn-default" type="button">Set as new password</button></p>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pwd.js"></script>
+</body>
+</html>

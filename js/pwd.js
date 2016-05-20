@@ -84,7 +84,7 @@ $(function() {
         $('.reveal').show('slow');
     });
 
-    $('.btn-default').click(function() {
+    $('.btn-success').click(function() {
         localStorage.setItem('pwd', $('.text-danger').text().trim());
         $('.text-success').text(localStorage.getItem('pwd').trim());
     });
